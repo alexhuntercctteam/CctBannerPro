@@ -87,12 +87,18 @@
 </table>
 
 ---
-
-## 🚀 Quick Start
-
-### 📦 Installation
+### 📱 Termux (Android)
 
 ```bash
+# Update Termux packages
+pkg update && pkg upgrade -y
+
+# Install Python & Git
+pkg install python git -y
+
+# Optional: For fancy ASCII fonts
+pip install pyfiglet
+
 # Clone the repository
 git clone https://github.com/alexhuntercctteam/CctBannerPro.git
 
@@ -101,3 +107,27 @@ cd CctBannerPro
 
 # Run the installer
 python ProCct.py
+```
+
+### 💻 Linux (Pc)
+```bash
+# Ubuntu / Debian / Kali
+sudo apt update && sudo apt install python3 python3-pip git -y
+
+# Arch / Manjaro
+sudo pacman -S python python-pip git --noconfirm
+
+# Fedora / RHEL
+sudo dnf install python3 python3-pip git -y
+
+# Optional: For fancy ASCII fonts
+pip3 install pyfiglet
+
+# Clone the repository
+git clone https://github.com/alexhuntercctteam/CctBannerPro.git
+
+# Enter directory
+cd CctBannerPro
+
+# Run the installer
+python3 ProCct.py
